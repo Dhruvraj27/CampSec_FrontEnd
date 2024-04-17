@@ -19,7 +19,7 @@ export const Navbars = () => {
 
   const navList = (
     <ul className="mt-2 mb-4 flex flex-col  lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-white">
-      <Typography
+      {/* <Typography
         as="li"
         variant="small"
         color="blue-gray"
@@ -48,7 +48,7 @@ export const Navbars = () => {
         <a href="#" className="flex items-center text-white">
           Blocks
         </a>
-      </Typography>
+      </Typography> */}
       <Typography
         as="li"
         variant="small"
