@@ -1,7 +1,7 @@
 import axios from "axios";
 export const UsePostApi = async (url, payload) => {
   try {
-    let URL = `http://localhost:4500/api/v1${url}`;
+    let URL = `https://campsec-backend.onrender.com/api/v1${url}`;
     const response = await axios.post(URL, payload);
     return response;
   } catch (error) {
@@ -12,7 +12,7 @@ export const UsePostApi = async (url, payload) => {
 };
 export const UsePostApiHook = async (url, payload) => {
   try {
-    let URL = `http://localhost:4500/api/v1${url}`;
+    let URL = `https://campsec-backend.onrender.com/api/v1${url}`;
     const response = await axios.post(URL, payload, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("accessToken")}`,
@@ -25,7 +25,7 @@ export const UsePostApiHook = async (url, payload) => {
 };
 export const UseGetApiHook = async (url) => {
   try {
-    let URL = `http://localhost:4500/api/v1${url}`;
+    let URL = `https://campsec-backend.onrender.com/api/v1${url}`;
     const response = await axios.get(URL, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("accessToken")}`,
@@ -39,7 +39,7 @@ export const UseGetApiHook = async (url) => {
 };
 export const UsePutApiHook = async (url, payload) => {
   try {
-    let URL = `http://localhost:4500/api/v1${url}`;
+    let URL = `https://campsec-backend.onrender.com/api/v1${url}`;
     const response = await axios.put(URL, payload, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("accessToken")}`,
