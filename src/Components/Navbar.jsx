@@ -62,7 +62,7 @@ export const Navbars = () => {
             window.location.reload();
           }}
         >
-          Logout
+          Logouts
         </Button>
         ;
       </Typography>
