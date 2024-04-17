@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #001242;
+}
+
+.signatureCanvas {
+  border: 1px solid black;
+  width: 100%;
+  min-height: 500px;
+}
+.backdrop-blur-sm {
+  overflow-y: scroll !important;
+}
