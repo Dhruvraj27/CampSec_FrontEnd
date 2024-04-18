@@ -7,6 +7,7 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import campSecIcon from "../assets/CampSec.png";
+import campSecDiffLogo from "../assets/Campsec-logo3.png"
 export const Navbars = () => {
   const [openNav, setOpenNav] = React.useState(false);
 
@@ -71,7 +72,7 @@ export const Navbars = () => {
 
   return (
     <div className=" max-h-[768px] w-[calc(100%)] overflow-auto">
-      <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none py-2 lg:py-4 bg-[#003566] text-white border-none">
+      <Navbar className="navigation sticky top-0 z-10 h-max max-w-full rounded-none py-2 lg:py-4 bg-[#041c2d] text-white border-3 border-[#b0bec5] rounded-md">
         <div className="flex items-center justify-between text-blue-gray-900">
           <Typography
             as="a"
@@ -79,7 +80,8 @@ export const Navbars = () => {
             className=" cursor-pointer py-1.5 font-medium text-white"
           >
             <div className="image_icon">
-              <img src={campSecIcon} style={{ width: "80px" }} alt="" />
+              {/* <img src={campSecIcon} style={{ width: "80px" }} alt="" /> */}
+              <img src={campSecDiffLogo} style={{ width: "80px" }} alt="" />
             </div>
           </Typography>
           <div className="flex items-center  pr-4">

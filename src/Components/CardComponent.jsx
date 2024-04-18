@@ -27,14 +27,16 @@ export const CardEntries = ({
         <div className="bothIcons flex justify-between">
           <div className="flex flex-col">
             <FaUser size="3rem" />
-            <img
-              src={data?.signURL}
-              onClick={() => {
-                setCloseModalOpen(true);
-              }}
-              className="w-[25%] cursor-pointer"
-              alt=""
-            />
+            <div className="image_wrapper w-[50px] h-[50px]">
+              <img
+                src={data?.signURL}
+                onClick={() => {
+                  setCloseModalOpen(true);
+                }}
+                className="w-full h-full cursor-pointer"
+                alt=""
+              />
+            </div>
             <Modal
               open={closeModalOpen}
               onClose={() => {
